@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mystylesheet-Andrew.css">
+
+<script type="text/javascript">
+  function chestnoise() {
+        var chestopensound = "Sound_Archive\\Link_to_the_Past\\chest_open.wav"
+         var chestopen = new Audio(chestopensound);
+         chestopen.play();
+  }
+</script>
+</head>
+
+<body>
+
+<h1>The Garden</h1>
+<h2>Button Project</h2>
+<p>I wanted to create a button that would play a sound when clicked</p>
+
+<button onclick="chestnoise()"><input type="image" src="Treasure_Chest.jpg" /></button>
+<p>The above photo is actually a button that plays the chest open noise from A Link To The Past. I ran into a few issues while creating this button, the first big one was that I didn't know any html or javascript. I figured out how to use onclick and assign things as an audio type. I also figred out that I need two \\ in my file paths</p>
+
+<h3>Image Gallery</h3>
+<p>I want to create a gallery to display images I like</p>
+<p>Colin says that I should use css flexbox citing the fact that it is one of the industry standards for laying out websites</p>
+<div class="imagerow">
+  
+    <img src="Image Archive\\2v.jpg" alt="2v Racing Photo" class="flexitem">
+  
+  
+    <img src="Image Archive\\carman view.jpg" alt="View from Carman 910" class="flexitem" >
+  
+  
+    <img src="Image Archive\\clam juice.jpg" alt="Clam Juice" class="flexitem" transform:rotate(90deg);>
+  
+  
+    <img src="Image Archive\\long leg.jpg" alt="Long Legged Me" class="flexitem" >
+  
+</div>
+<p>I created a flex row to display 4 evenly sized images. My next question is can I create a flex column of flex rows?</p>
+
+<div class="columnvector">
+  <div class="imagerow">
+  
+    <img src="Image Archive\\2v.jpg" alt="2v Racing Photo" class="flexitem">
+  
+  
+    <img src="Image Archive\\carman view.jpg" alt="View from Carman 910" class="flexitem" >
+  
+  
+    <img src="Image Archive\\clam juice.jpg" alt="Clam Juice" class="flexitem" transform:rotate(90deg);>
+  
+  
+    <img src="Image Archive\\long leg.jpg" alt="Long Legged Me" class="flexitem" >
+  
+  </div>
+  <div class="imagerow">
+  
+  <img src="Image Archive\\2v.jpg" alt="2v Racing Photo" class="flexitem" order=4>
+
+
+  <img src="Image Archive\\carman view.jpg" alt="View from Carman 910" class="flexitem" order=2 >
+
+
+  <img src="Image Archive\\clam juice.jpg" alt="Clam Juice" class="flexitem" transform:rotate(90deg); order=3>
+
+
+  <img src="Image Archive\\long leg.jpg" alt="Long Legged Me" class="flexitem" order=1 >
+
+  </div>
+
+</div>
+
+<p>I can</p>
+
+<h4>What do I do now?</h4> 
+<p>Colin and I want to make a website that allows a user to input products and an area code, the website will then compare price data for that product then output the cheapest retailers of the specified products in the area. It would be useful for shopping. I voiced he concern that this model will negatively affect small businesses because of the fact that large scale price data is only available from large retailers. We are going to proceed in spite of this because this will be a good learning experience, also most people only care about the larer retailers anyways. We talked about adding a way for small businesses to submit price data so that they can be included. End goal is to generate ad revenue</p>
+<p>Also, Rainbow text</p>
+<h5 class="rainbow-text">Rainbow Text</h5>
+
+
+
+
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+</body>
+</html>

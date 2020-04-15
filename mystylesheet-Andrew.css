@@ -1,0 +1,99 @@
+body {
+    background-color: rebeccapurple;
+    }
+
+h1 {
+    color: green;
+    text-align:center;
+    font-style: Impact;
+    align-content: center;
+    font-size: 80px;
+}
+
+h2 {
+    color: black;
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-style: Impact;
+}
+
+h3 {
+    color: black;
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-style: Impact;
+}
+
+p {
+    font-size: 25px;
+    font-style: Arial;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .imagerow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto ;
+    width: 100vw;
+    align-content: flex-start;
+    
+  }
+
+  .flexitem {
+      display: flex;
+      width: 25%;
+      height: auto;
+      
+  }
+
+  .columnvector {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 50vw ;
+    width: auto;
+    align-content: flex-start;
+    
+  }
+
+  .rainbow-text {
+      font-size: 40px;
+      animation: rainbow 5s infinite;
+  }
+
+  .rainbowback {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    animation: slide 60s linear infinite
+  }
+
+ @keyframes   .slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-900px, 0, 0); /* The image width */
+    }
+  }
+
+
+  @keyframes rainbow{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
